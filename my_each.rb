@@ -5,11 +5,12 @@ def my_each(word) # put argument(s) here
     yield(word[i])
     i = i + 1
   end
+  word
   end
 
 my_each (["Hi", "Hello", "Bye", "Goodbye"]) do |word|
   if word.start_with?("H")
-    puts "#{word} Stranger!"
+  "#{word} Stranger!"
   end
 
 end
