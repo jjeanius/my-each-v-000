@@ -5,8 +5,7 @@ def my_each(word) # put argument(s) here
     yield(word[i])
     i = i + 1
   end
-  return word
-end
+  end
 
 my_each (["Hi", "Hello", "Bye", "Goodbye"]) do |word|
   if word.start_with?("H")
