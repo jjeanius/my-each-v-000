@@ -4,13 +4,13 @@ def my_each(word) # put argument(s) here
   while i < word.length
     yield(word[i])
     i = i + 1
-
   end
-  word
+  return word
 end
 
 my_each (["Hi", "Hello", "Bye", "Goodbye"]) do |word|
   if word.start_with?("H")
-    return "#{word} Stranger!"
+    puts "#{word} Stranger!"
   end
+
 end
